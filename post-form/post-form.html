@@ -1,0 +1,7 @@
+<form ng-submit="$ctrl.onSubmit({title: $ctrl.title, content: $ctrl.content})">
+    <label>Title</label>
+    <input expand-on-focus type="text" placeholder="Post title" ng-model="$ctrl.title">
+    <label>Thought</label>
+    <textarea expand-on-focus ng-model="$ctrl.content"></textarea>
+    <button>Add Post</button>
+</form>

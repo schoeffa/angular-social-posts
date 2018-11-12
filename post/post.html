@@ -1,0 +1,7 @@
+<section class="post-container">
+    <p class="post-title">{{$ctrl.post.title}}</p>
+    <p class="post-content">{{$ctrl.post.content}}</p>
+    <button ng-click="$ctrl.removePost({post: $ctrl.post})" class="material-icons close">close</button>
+    <button class="material-icons upvote" ng-click="$ctrl.upVote()">thumb_up</button>
+    <p class="votes">{{ $ctrl.upvotes }}</p>
+</section>

@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Homemade Apple';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v8/Qw3EZQFXECDrI2q789EKQZJob0x6XHg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    font-family: Dosis;
+}
+
+body {
+    background: #f3f1f7;
+}
+
+.title {
+    font-family: 'Homemade Apple';
+    font-size: 36px;
+    color: rgb(3, 169, 244);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 90%;
+    font-family: Dosis;
+    font-size: 18px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+}
+
+.post-container {
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px 50px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.post-content {
+    margin-top: 0px;
+    border-bottom: 1px solid silver;
+    padding-bottom: 5px;
+}
+
+post-form {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #B1DDEA;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px 50px;
+}
+
+form button {
+    width: 572px;
+    margin: 10px;
+}
+
+label {
+    font-size: 24px;
+    margin: 5px 30px;
+}
+
+input,
+textarea {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 550px;
+    align-self: center;
+}
+
+textarea {
+    height: 200px;
+}
+
+post {
+    position: relative;
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    right: 80px;
+    bottom: 40%;
+    width: auto;
+    border: none;
+}
+
+.bouncy-scale-in {
+    transition: all 0 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.45, 1.595);
+}
+
+.bouncy-scale-in.ng-enter {
+    transform: scale(3);
+    transition-duration: 450ms;
+    opacity: 0;
+}
+
+.bouncy-scale-in.ng-enter-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.bouncy-scale-in.ng-leave {
+    transform: scale(1);
+    transition-duration: 450ms;
+    opacity: 1;
+}
+
+.bouncy-scale-in.ng-leave-active {
+    transform: scale(3);
+    opacity: 0;
+}
+
+.bouncy-scale-in.ng-hide-add {
+    transform: scale(1);
+    transition-duration: 450ms;
+    opacity: 1;
+}
+
+.bouncy-scale-in.ng-hide-add.ng-hide-add-active {
+    transform: scale(3);
+    opacity: 0;
+}
+
+.bouncy-scale-in.ng-hide-remove {
+    transform: scale(3);
+    transition-duration: 450ms;
+    display: block !important;
+    opacity: 0;
+}
+
+.bouncy-scale-in.ng-hide-remove.ng-hide-remove-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.delete {
+    width: auto;
+}
+
+.upvote {
+    border: none;
+    width: auto;
+}
+
+.votes {
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    bottom: 20px;
+    left: -20px;
+}

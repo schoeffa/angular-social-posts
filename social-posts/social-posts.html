@@ -1,0 +1,6 @@
+<section class="container">
+    <p class="title">My Thoughts</p>
+    <post-form ng-class="'bouncy-scale-in'" ng-if="$ctrl.display" on-submit="$ctrl.onSubmit(title, content)"></post-form>
+    <button ng-click="$ctrl.displayForm()">New Thought</button>
+        <post remove-post="$ctrl.removePost(post)" post="entry" ng-repeat="entry in $ctrl.posts | orderBy: '-'"></post>
+</section>
